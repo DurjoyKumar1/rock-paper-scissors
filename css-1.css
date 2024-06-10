@@ -40,14 +40,25 @@ img{
     object-fit: cover;
     border:5px solid black;
     box-shadow: 8px 8px 20px black;
+    cursor:pointer;
 }
+
+img:hover{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    object-fit: cover;
+    border:5px solid rgb(255, 255, 255);
+    box-shadow: 8px 8px 20px black;
+}
+
 
 .score{
     grid-column-start: 2;
     grid-column-end: 3;
     text-align:center;
     border: 5px solid rgb(48, 238, 175);
-    background-color: aquamarine;
+    background-color: rgb(56, 58, 57);
     border-radius: 5px;
     margin:auto;
     font-size: 30px;
@@ -71,4 +82,77 @@ p{
     border-radius: 10px;
     box-shadow: 8px 8px 20px black;
     margin:auto;
+}
+
+.play:hover{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align:center;
+    height:50px;
+    width:200px;
+    font-size: 30px;
+    border: solid 5px rebeccapurple;
+    background-color: rgb(142, 44, 234);
+    border-radius: 10px;
+    box-shadow: 8px 8px 20px black;
+    margin:auto;
+}
+
+.display{
+    height:150px;
+    width:100%;
+    background-color: rgb(102, 0, 255);
+    position:absolute;
+    top:230px;
+   
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+p{
+    text-align:center;
+    font-size: 70px;
+    color:White;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-round,.new-game{
+    height:50px;
+    width:150px;
+    background-color: rgb(214, 39, 39);
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    color:white;
+    font-size: 25px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    
+}
+
+.new-game{
+    position:absolute;
+    left:770px;
+}
+
+.new-round{
+    position:absolute;
+    left:570px;   
+}
+
+.new-round:hover,.new-game:hover{
+    height:50px;
+    width:150px;
+    background-color: rgb(255, 0, 0);
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    color:white;
+    font-size: 25px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
 }
